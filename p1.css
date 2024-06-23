@@ -1,0 +1,185 @@
+body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: url('123.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(246, 225, 220, 0.514);
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: 0.3s;
+}
+header.sticky {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+header .logo {
+    font-weight: 700;
+    color: rgb(3, 7, 7);
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+nav {
+    display: flex;
+    justify-content: flex-end; 
+    margin: 20px 0;
+}
+nav a {
+    display: flex;
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(7, 5, 5);
+    font-weight: 600;
+}
+.specialties, .testimonials, .contact {
+    max-width: 1200px;
+    margin: 100px auto 20px auto; /* Adjusted margin-top to account for fixed header */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.993);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.specialties h2, .testimonials h2, .contact h2 {
+    text-align: center;
+    color: #333;
+}
+.specialties .items, .testimonials .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.item, .review {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.item:hover, .review:hover {
+    transform: scale(1.05);
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+.contact form input, .contact form textarea {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.contact form button {
+    padding: 15px;
+    border: none;
+    background: #ff7e5f;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.contact form button:hover {
+    background: #feb47b;
+}
+.reservations {
+    max-width: 1200px;
+    margin: 100px auto 20px auto;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reservations h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .reservations form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reservations form label {
+    margin-bottom: 10px;
+  }
+  
+  .reservations form input, .reservations form select {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .reservations form button {
+    padding: 15px;
+    border: none;
+    background: #ff7e5f;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .reservations form button:hover {
+    background: #feb47b;
+  }
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+footer a {
+    color: #feb47b;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    .specialties .items, .testimonials .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.menu{
+    display: flex;
+    padding: 20px;
+    background-color: #ddddddce;
+  }
+  
+  .column {
+    flex: 50%;
+    padding: 20px;
+  }
+  
+  .item {
+    padding: 10px;
+    border-bottom: 1px dashed #dddddd55;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }

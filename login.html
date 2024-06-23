@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waffles and Shakes</title>
+    <link href="p1.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="p1.html" class="logo">
+            <img src="logo.png" alt="Waffles and Shakes logo" height="60px" width="60px">
+        <nav>
+            <a href="#specialties">Specialties</a>
+            <a href="#reservations">book table </a>
+            <a href="#menu">Menu</a>
+            <a href="#">Reviews</a>
+            <a href="#">Contact</a>
+            <a href="#">Login/Signup</a>
+            
+        </nav>
+    </header>
+    <link rel="stylesheet" href="login.css">
+    <div class="main">  
+        <input type="checkbox" id="chk" aria-hidden="true">
+    
+        <div class="signup">
+            <form action="login.php" method="post">
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" name="txt" placeholder="User name" required="">
+                <input type="text" name="phone" placeholder="Phone No" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <button name="signup">Sign up</button>
+            </form>
+        </div>
+    
+        <div class="login">
+            <form action="login.php" method="post">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <button name="login">Login</button>
+            </form>
+        </div>
+    </div>  
+  
+</body>
+<body>
+    <footer>
+        <p>&copy; 2024 Waffles and Shakes. All Rights Reserved.</p>
+        <p>Follow us on 
+            <a href="#">Facebook</a>, 
+            <a href="#">Instagram</a>, and 
+            <a href="#">Twitter</a>.
+        </p>
+    </footer>
+</body>
+</html>
