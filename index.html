@@ -1,1 +1,259 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waffles and Shakes</title>
+    <link href="p1.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="p1.html" class="logo">
+          <img src="logo.png" alt="Waffles and Shakes logo" height="60px" width="60px">
+        </a>
+        <nav>
+            <a href="#specialties">Specialties</a>
+            <a href="#reservations">Book table </a>
+            <a href="#menu">Menu</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#contact">Contact</a>
+            <a href="login.html">Login/Signup</a>
+            
+        </nav>
+    </header>
+ 
+    <section id="specialties" class="specialties">
+        <h2>Our Specialties</h2>
+        <div class="items">
+            <div class="item">
+              <img src="img5.jpg" alt="waffle">
+                <h3>Classic Waffle</h3>
+                <p>Delicious waffle topped with fresh berries and whipped cream.</p>
+            </div>
+            <div class="item">
+              <img src="img6.jpg" alt="waffle">
+                <h3>Chocolate Shake</h3>
+                <p>Rich and creamy chocolate shake made with premium cocoa.</p>
+            </div>
+            <div class="item">
+              <img src="img7.jpg" alt="waffle">
+                <h3>Strawberry Waffle</h3>
+                <p>Sweet waffle topped with fresh strawberries and syrup.</p>
+            </div>
+        </div>
+    </section>
+    <section id="reservations" class="reservations">
+      <h2>Table Reservations</h2>
+      <form action="db1.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your Name" required name="t1">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Your Email" required name="t2">
+        <br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" placeholder="Your Phone Number" required name="t3">
+        <br><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" required name="t4">
+        <br><br>
+        <label for="time">Time:</label>
+        <input type="time" id="time" required name="t5">
+        <br><br>
+        <label for="party-size">Party Size:</label>
+        <select id="party-size" required name="t6">
+          <option value="">Select</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <br><br>
+        <button type="submit">Make Reservation</button>
+      </form>
+    </section>
+
+
+    <div id="menu" class="menu">
+        <div class="column">
+          <h3>To Drink</h3>
+          <div class="item">
+            <img src="https://i.imgur.com/03y1U89.png" alt="Caffe Mocha">
+            <div>
+              <h4>Caffe Mocha</h4>
+              <p>Lorem ipsum dolor</p>
+            </div>
+            <span>$3.75</span>
+          </div>
+          <div class="item">
+            <img src="https://i.imgur.com/l7pQ3pY.png" alt="Iced Caramel Latte">
+            <div>
+              <h4>Iced Caramel Latte</h4>
+              <p>Ipsum dolor sit ame</p>
+            </div>
+            <span>$4.25</span>
+          </div>
+          <div class="item">
+            <img src="https://i.imgur.com/tQ6jB2N.png" alt="Cappuccino">
+            <div>
+              <h4>Cappuccino</h4>
+              <p>Lorem ipsum sit ame</p>
+            </div>
+            <span>$3.95</span>
+          </div>
+          <div class="item">
+            <img src="https://i.imgur.com/dZ8V0pO.png" alt="Caffe Latte">
+            <div>
+              <h4>Caffe Latte</h4>
+              <p>Lorem ipsum dolor sit ame</p>
+            </div>
+            <span>$3.75</span>
+          </div>
+          <div class="item">
+            <img src="https://i.imgur.com/9X0rT5r.png" alt="Espresso Macchiato">
+            <div>
+              <h4>Espresso Macchiato</h4>
+              <p>Ipsum dolor sit ame</p>
+            </div>
+            <span>$3.50</span>
+          </div>
+          <div class="item">
+            <img src="https://i.imgur.com/F3Z3j5V.png" alt="Hot Chocolate">
+            <div>
+              <h4>Hot Chocolate</h4>
+              <p>Delicious and creamy hot chocolate</p>
+            </div>
+            <span>$3.25</span>
+          </div>
+          <div class="item">
+            <img src="https://i.imgur.com/O49z628.png" alt="Chai Latte">
+            <div>
+              <h4>Chai Latte</h4>
+              <p>Aromatic and spicy chai latte</p>
+            </div>
+            <span>$3.75</span>
+          </div>
+          <div class="item">
+            <img src="https://i.imgur.com/3dN95vQ.png" alt="Green Tea Latte">
+            <div>
+              <h4>Green Tea Latte</h4>
+              <p>Refreshing and healthy green tea latte</p>
+            </div>
+            <span>$3.95</span>
+          </div>
+        </div>
+        <div class="column">
+          <h3>To Eat</h3>
+          <div class="item">
+            <img src="https://i.imgur.com/0X6889A.png" alt="Croissant">
+            <div>
+              <h4>Croissant</h4>
+              <p>Lorem ipsum dolor sit ame</p>
+            </div>
+            <span>$4.50</span>
+          </div>
+          <div class="item">
+            <img src="https://i.imgur.com/O49z628.png" alt="Macaroon">
+            <div>
+              <h4>Macaroon</h4>
+              <p>Ipsum dolor sit</p>
+            </div>
+            <span>$2.75</span>
+          </div>
+          <div class="item">
+            <img src="https://i.imgur.com/F3Z3j5V.png" alt="Chocolate Cookies">
+            <div>
+              <h4>Chocolate Cookies</h4>
+              <p>Lorem ipsum dolor sit</p>
+            </div>
+            <span>$2.90</span>
+          </div>
+          <div class="item">
+            <img src="https://i.imgur.com/3dN95vQ.png" alt="Donuts">
+            <div>
+              <h4>Donuts</h4>
+              <p>Lorem ipsum dolor sit ame</p>
+            </div>
+            <span>$2.50</span>
+          </div>
+          <div class="item">
+            <img src="https://i.imgur.com/p3sC37R.png" alt="Strawberry Cupcakes">
+            <div>
+              <h4>Strawberry Cupcakes</h4>
+              <p>Ipsum dolor sit</p>
+            </div>
+            <span>$1.95</span>
+          </div>
+          <div class="item">
+            <img src="https://i.imgur.com/03y1U89.png" alt="Blueberry Muffin">
+            <div>
+              <h4>Blueberry Muffin</h4>
+              <p>Delicious blueberry muffin with a crumbly topping</p>
+            </div>
+            <span>$2.25</span>
+          </div>
+          <div class="item">
+            <img src="https://i.imgur.com/l7pQ3pY.png" alt="Bagel with Cream Cheese">
+            <div>
+              <h4>Bagel with Cream Cheese</h4>
+              <p>Freshly baked bagel with creamy cream cheese</p>
+            </div>
+            <span>$3.50</span>
+          </div>
+          <div class="item">
+            <img src="https://i.imgur.com/tQ6jB2N.png" alt="Avocado Toast">
+            <div>
+              <h4>Avocado Toast</h4>
+              <p>Healthy and delicious avocado toast with a sprinkle of sea salt and pepper</p>
+            </div>
+            <span>$4.50</span>
+          </div>
+        </div>
+      </div>
+
+    <section id="testimonials" class="testimonials">
+        <h2>Customer Testimonials</h2>
+        <div class="reviews">
+            <div class="review">
+                <p>"The best waffles I've ever had! A must-visit café."</p>
+                <p>- Jane Doe</p>
+            </div>
+            <div class="review">
+                <p>"Amazing shakes and fantastic service. Highly recommend!"</p>
+                <p>- John Smith</p>
+            </div>
+            <div class="review">
+                <p>"A delightful experience with delicious treats."</p>
+                <p>- Mary Johnson</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="db1.php" method="post">
+            <input type="text" placeholder="Your Name" required name="t7">
+            <input type="email" placeholder="Your Email" required name="t8">
+            <textarea placeholder="Your Message" rows="5" required name="t9"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+  
+
+    <footer>
+        <p>&copy; 2024 Waffles and Shakes. All Rights Reserved.</p>
+        <p>Follow us on 
+            <a href="#">Facebook</a>, 
+            <a href="#">Instagram</a>, and 
+            <a href="#">Twitter</a>.
+        </p>
+    </footer>
+</body>
+</html>
